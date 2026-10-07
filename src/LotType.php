@@ -35,7 +35,7 @@ final class LotType implements OfferType
         return '@auction/offer_detail.twig';
     }
 
-    public function formData(?int $offerId, ?array $typed, App $app): array
+    public function formData(?int $offerId, ?array $typed, App $app, ?array $locales = null): array
     {
         $locale = $app->translator->locale();
         $lot = $offerId !== null ? (new Auctions($app->db))->lot($offerId) : null;
