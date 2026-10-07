@@ -73,5 +73,6 @@ final class BidController extends Controller
             'amount' => Money::format($amount, $offer['currency'], $locale),
             'link' => $app->url('/offers/' . $text['slug'], $locale, true),
         ], $locale);
+        $app->notifications->create((int) $previous['id'], 'auction_outbid', 'auction.notification.outbid', ['title' => $text['title']], '/offers/' . $text['slug']);
     }
 }

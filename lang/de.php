@@ -78,4 +78,5 @@ return [
     'auction.mail.outbid.body' => "Hallo,\n\nbei der Auktion „{title}“ hat jemand {amount} geboten. Du bist nicht mehr Höchstbietender.\n\nZur Auktion: {link}",
     'auction.mail.unsold.subject' => 'Auktion ohne Gebot beendet: {title}',
     'auction.mail.unsold.body' => "Hallo,\n\ndeine Auktion „{title}“ ist ohne Gebot zu Ende gegangen. Das Angebot ist jetzt pausiert. Du kannst es bearbeiten und wieder veröffentlichen, dann beginnt eine neue Laufzeit.\n\nZum Angebot: {link}",
+    'auction.notification.outbid' => 'Du wurdest überboten: „{title}"',
 ];

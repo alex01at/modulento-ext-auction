@@ -78,4 +78,5 @@ return [
     'auction.mail.outbid.body' => "Hello,\n\nsomeone has bid {amount} in the auction \"{title}\". You are no longer the highest bidder.\n\nTo the auction: {link}",
     'auction.mail.unsold.subject' => 'Auction ended without a bid: {title}',
     'auction.mail.unsold.body' => "Hello,\n\nyour auction \"{title}\" ended without a bid. The offer is now paused. You can edit it and publish it again to start a new run.\n\nTo the offer: {link}",
+    'auction.notification.outbid' => 'You have been outbid: "{title}"',
 ];
