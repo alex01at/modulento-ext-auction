@@ -25,6 +25,11 @@ final class LotType implements OfferType
         return 'auction.type.lot';
     }
 
+    public function priceLabelKey(): string
+    {
+        return 'core.offer.price_current';
+    }
+
     public function formTemplate(): string
     {
         return '@auction/offer_form.twig';
